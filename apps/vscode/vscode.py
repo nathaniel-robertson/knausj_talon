@@ -144,13 +144,13 @@ class Actions:
 
     def command_palette():
         """Show command palette"""
-        actions.key("ctrl-shift-p")
+        actions.key("ctrl-shift-0")
 
 
 @mac_ctx.action_class("user")
 class MacUserActions:
     def command_palette():
-        actions.key("cmd-shift-p")
+        actions.key("cmd-shift-0")
 
 
 @ctx.action_class("user")
