@@ -49,6 +49,8 @@ midclick:
 	mouse_click()
 	# close the mouse grid
 	user.grid_close()
+	# close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
 (tripclick | triplick):
 	mouse_click()
 	mouse_click()
