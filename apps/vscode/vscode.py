@@ -112,6 +112,12 @@ class EditActions:
     def line_clone():
         actions.key("shift-alt-down")
 
+    def line_insert_down():
+        actions.user.vscode("editor.action.insertLineAfter")
+
+    def line_insert_up():
+        actions.user.vscode("editor.action.insertLineBefore")
+
     def jump_line(n: int):
         actions.user.vscode("workbench.action.gotoLine")
         actions.insert(str(n))
@@ -153,7 +159,8 @@ class Actions:
 @mac_ctx.action_class("user")
 class MacUserActions:
     def command_palette():
-        actions.key("cmd-shift-0")
+        # cmd-shift-p interferes with my keybinding for my clipboard manager
+        actions.key("ctrl-shift-0")
 
 
 @ctx.action_class("user")
