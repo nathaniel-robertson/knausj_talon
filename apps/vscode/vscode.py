@@ -146,6 +146,7 @@ class Actions:
 
     def command_palette():
         """Show command palette"""
+        # cmd-shift-p interferes with my keybinding for my clipboard manager
         actions.key("ctrl-shift-0")
 
 
